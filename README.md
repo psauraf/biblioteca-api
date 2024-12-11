@@ -74,13 +74,14 @@ CREATE TABLE usuarios (
 ```sql
 INSERT INTO usuarios (nombre, email, edad, password) VALUES
 ('Juan Perez', 'juan@example.com', 30, '$2y$10$...'),
-('Pedro Gomez', 'pedro@example.com', 25, '$2y$10$...'),
+('Pedro Saura', 'pedro@example.com', 32, '$2y$10$...'),
 ('Andres Martinez', 'andres@example.com', 28, '$2y$10$...');
 
 INSERT INTO libros (titulo, autor, genero, anio_publicacion) VALUES
-('1984', 'George Orwell', 'Ficción', 1949),
-('El Principito', 'Antoine de Saint-Exupéry', 'Ficción', 1943),
 ('Cien Años de Soledad', 'Gabriel García Márquez', 'Realismo Mágico', 1967);
+('1984', 'George Orwell', 'Distopía', 1949),
+('El Hobbit', 'J.R.R. Tolkien', 'Fantasía', 1937),
+
 ```
 
 ### **2. Configurar el proyecto**
@@ -134,10 +135,10 @@ class Database {
 ```json
 [
   {
-    "id": 1,
+    "id": 2,
     "titulo": "1984",
     "autor": "George Orwell",
-    "genero": "Ficción",
+    "genero": "Distopía",
     "anio_publicacion": 1949
   }
 ]
@@ -164,5 +165,5 @@ class Database {
 
 ## Créditos
 
-Desarrollado por Pedro Saura. Inspirado en el entorno de desarrollo para la empresa Cuatroochenta.
+Desarrollado por Pedro Saura para la empresa Cuatroochenta.
 
